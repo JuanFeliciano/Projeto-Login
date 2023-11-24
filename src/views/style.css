@@ -1,0 +1,125 @@
+@import "https://fonts.googleapis.com/css2?family=Akatab&family=Bacasime+Antique&family=Noto+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@400;700&display=swap";
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-esquerda {
+  width: 45vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-esquerda > h1 {
+  color: #77ffc0;
+  font-size: 2.5vw;
+}
+
+.imagem {
+  width: 35vw;
+}
+.login-direita {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-login {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #00000056;
+}
+.card-login > h1 {
+  color: #0f8;
+  font-weight: 800;
+  margin: 0;
+}
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0;
+}
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield > label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+  color: #f0ffff94;
+}
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #0f8;
+  cursor: pointer;
+  box-shadow: 0 10px 40px -12px #00ff8052;
+}
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+  .login-esquerda > h1 {
+    display: none;
+  }
+  .login-esquerda > h3 {
+    display: none;
+  }
+  .login-esquerda {
+    width: 100%;
+    height: auto;
+  }
+  .login-direita {
+    width: 100%;
+    height: auto;
+  }
+  .imagem {
+    width: 55vw;
+  }
+}
